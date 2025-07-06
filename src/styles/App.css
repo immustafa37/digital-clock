@@ -1,17 +1,19 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  transition: background 0.3s;
+  transition: background 0.3s, color 0.3s;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  overflow: hidden;
 }
 
 body.light {
-  background: #f0f0f0;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
   color: #000;
 }
 
 body.dark {
-  background: #121212;
-  color: #fff;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffffcc;
 }
 
 .app-container {
@@ -20,4 +22,6 @@ body.dark {
   justify-content: center;
   min-height: 100vh;
   padding: 20px;
+  position: relative;
+  z-index: 1;
 }
