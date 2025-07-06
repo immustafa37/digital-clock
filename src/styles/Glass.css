@@ -1,0 +1,38 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  color: inherit;
+}
+
+.clock .time {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.clock .date {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.toggle-btn {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: inherit;
+  backdrop-filter: blur(5px);
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
