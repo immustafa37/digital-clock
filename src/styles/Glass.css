@@ -1,38 +1,57 @@
 .glass-card {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
   padding: 40px;
   text-align: center;
   max-width: 400px;
   width: 100%;
   color: inherit;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .clock .time {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
 }
 
 .clock .date {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .toggle-btn {
-  margin-top: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  border: none;
-  padding: 10px 20px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 22px;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 14px;
   cursor: pointer;
   color: inherit;
   backdrop-filter: blur(5px);
-  transition: background 0.3s;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .toggle-btn:hover {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
 }
